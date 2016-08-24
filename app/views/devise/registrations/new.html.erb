@@ -1,0 +1,260 @@
+
+<div class="container">
+
+<%= form_for(resource, as: resource_name,:html => {:class => "form-horizontal"},url: registration_path(resource_name)) do |f| %>
+
+    <div  class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info" >
+              <div class="panel-heading">
+                <div class="panel-title">Sign Up </div>
+
+              </div>
+
+              <div style="padding-top:30px" class="panel-body" >
+
+                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                <form id="loginform" class="form-horizontal" role="form">
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <%= f.text_field :username, autocomplete: true,id:'login-password',class:'form-control',placeholder:'username',autofocus:true %>
+
+                  </div>
+
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+
+                    <%= f.email_field :email, autofocus: 'off' , id:'login-username',class:'form-control', placeholder:'Email Address' %>
+
+                  </div>
+
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                    <%= f.password_field :password, autocomplete: "off",id:'login-password',class:'form-control',placeholder:'password' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+
+                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                    <%= f.password_field :password_confirmation, autocomplete: "off",id:'login-password',class:'form-control',placeholder:'password confirmation' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <%= f.text_field :city, autocomplete: "off",class:'form-control',placeholder:'City' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <%= f.text_field :contact, autocomplete: "off",class:'form-control',placeholder:'contact' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <%= f.text_field :address, autocomplete: "off",class:'form-control',placeholder:'address' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-male" aria-hidden="true"></i></span>
+                    <%= f.text_field :fname, autocomplete: "off",class:'form-control',placeholder:'First Name' %>
+
+                  </div>
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-male" aria-hidden="true"></i></span>
+                    <%= f.text_field :lname, autocomplete: "off",class:'form-control',placeholder:'Last Name' %>
+
+                  </div>
+
+
+                  <div style="margin-top:10px" class="form-group">
+                    <!-- Button -->
+
+                    <div class="col-sm-12 controls">
+                      <%= f.submit "Sign Up" ,id:'btn-login',class:'btn btn-success'%>
+
+                      <!-- <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a> -->
+
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="col-md-12 control">
+                      <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+
+
+                        <%= render "devise/shared/links" %>
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+
+
+              </div>
+            </div>
+
+      <% end %>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<div class="container">
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <ol class="breadcrumb">
+      <li> <%= link_to 'Home',root_path %></li>
+
+      <li class="active"> All category</li>
+
+
+    </ol>
+
+
+
+    <h1 class="title"><%= @listing.name %></h1>
+        <p><%=@listing.description %></p>
+        <p><%=@listing.city %></p>
+        <p><%=@listing.zipcode %></p>
+         <p><%=time_ago_in_words( @listing.created_at) %></p>
+    <span>
+      <% if @listing.user=current_user %>
+        <%= link_to 'edit', edit_listing_path,class:'btn btn-primary' %>
+          <%= link_to 'delete', @listing,data:{confirm:'Are you sure you want to delete the listings'}, method: :delete,class:'btn btn-primary' %>
+      <% end %>
+
+
+
+    </span>
+
+
+
+  </div>
+</div>
+</div>
